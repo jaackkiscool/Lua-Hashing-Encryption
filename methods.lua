@@ -1,4 +1,4 @@
--- Secret Shared 67 Bits key. (53 + 14 = 67)
+-- Secret Shared 67 Bits Key (53 + 14 = 67)
 local Key53 = 40000
 local Key14 = 45000
 
