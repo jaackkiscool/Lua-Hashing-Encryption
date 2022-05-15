@@ -1,2 +1,2 @@
-# Lua-Encryption-Methods
-### I was bored along, and I decided to share my Encryption Methods for Lua.
+# Lua-Hashing-Encryption
+### I was bored, I decided to share Hashing Encryption I personally use myself.
