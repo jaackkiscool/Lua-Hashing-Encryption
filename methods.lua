@@ -1,6 +1,4 @@
--- Hashing
-
--- Secret Shared 67 Bits key. (Could be Random)
+-- Secret Shared 67 Bits key. (53 + 14 = 67)
 local Key53 = 40000
 local Key14 = 45000
 
@@ -30,7 +28,7 @@ local Key14 = 45000
     ))
   end
 
-  function UnHash(str)
+  function DecodeHash(str)
     local K, F = Key53, 16384 + Key14
     return (str:gsub('%x%x',
       function(c)
@@ -45,8 +43,6 @@ local Key14 = 45000
     ))
   end
 
-local s = 'Hello world'
-print(Hash(s)) --> 80897dfa1dd85ec196bc84
-print(UnHash("80897dfa1dd85ec196bc84")) --> Hello world
-
--- More coming soon, those are simple.
+local String = "Hello, World!"
+print(tostring(Hash(String))) --> 486508150bd8891a0985ce54bc
+print(tostring(DecodeHash("486508150bd8891a0985ce54bc"))) --> Hello, World!
